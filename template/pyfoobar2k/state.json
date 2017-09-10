@@ -1,0 +1,12 @@
+﻿{
+"artist":"[HELPER1]",
+"title":"[HELPER2]",
+"album":"[HELPER3]",
+"volume":"[VOLUME]",
+"volumedb":"[VOLUME_DB]",
+"isPlaying":"[IS_PLAYING]",
+"isPaused":"[IS_PAUSED]",
+"itemPlayingPos":"[ITEM_PLAYING_POS]",
+"itemPlayingLen":"[ITEM_PLAYING_LEN]",
+"albumArt":"[ALBUMART]"
+}

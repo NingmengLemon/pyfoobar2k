@@ -1,0 +1,14 @@
+; pyfoobar2k foobar media_player configuration file
+[foo_httpcontrol]
+url=/
+playlist_row={"artist":"$fix_eol($replace(%artist%,\,\\,",\"))","album":"$fix_eol($replace(%album%,\,\\,",\"))","track_number":"$if(%queue_indexes%,'('%queue_indexes%') ',)$ifgreater(%totaldiscs%,1,D%discnumber%.,)%tracknumber%","title":"$fix_eol($replace(%title%,\,\\,",\"))","length":"%length%","length_seconds":"%length_seconds%","date":"%date%"}
+
+playlist_items_per_page=10
+helper1="$fix_eol($replace(%artist%,\,\\,",\"))"
+helper2="$fix_eol($replace(%title%,\,\\,",\"))"
+helper3="$fix_eol($replace(%album%,\,\\,",\"))"
+
+albumart_not_found=/nocover_skip.png
+albumart_not_available=/cover_not_available.png
+albumart_limit_size=0
+albumart_prefer_embedded=0
