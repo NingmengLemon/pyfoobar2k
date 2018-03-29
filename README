@@ -18,9 +18,9 @@ foobar2000 Requirements:
 
 3. foo_httpcontrol template import
 
-standard installation: usually goes into '%APPDATA%\foobar2000\foo_httpcontrol_data\pyfoobar2k'
+standard installation: usually goes into '%APPDATA%\\foobar2000\\foo_httpcontrol_data\\pyfoobar2k'
 
-portable installation: usually goes into '<foobar2000_root_dir>\foo_httpcontrol_data\pyfoobar2k'
+portable installation: usually goes into '<foobar2000_root_dir>\\foo_httpcontrol_data\\pyfoobar2k'
 
 template is accessible via http://<player_ip_address>:8888/pyfoobar2k
 
