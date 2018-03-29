@@ -4,7 +4,7 @@ foo_httpcontrol by oblikoamorale' https://bitbucket.org/obostlikoamorale/foo_htt
 
 currently only some of foo_httpcontrol functions are implemented,
 
-some basic player commands
+some basic playback commands
 
 fetching track info and album art from player
 
@@ -18,9 +18,9 @@ foobar2000 Requirements:
 
 3. foo_httpcontrol template import
 
-standard installation: usually goes into %APPDATA%\foobar2000\foo_httpcontrol_data\pyfoobar2k
+standard installation: usually goes into '%APPDATA%\foobar2000\foo_httpcontrol_data\pyfoobar2k'
 
-portable installation: usually goes into <foobar2000_root_dir>\foo_httpcontrol_data\pyfoobar2k
+portable installation: usually goes into '<foobar2000_root_dir>\foo_httpcontrol_data\pyfoobar2k'
 
 template is accessible via http://<player_ip_address>:8888/pyfoobar2k
 
