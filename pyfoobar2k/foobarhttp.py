@@ -20,7 +20,7 @@ class FoobarRemote:
 
         self.username = username
         if username is not None:
-            _LOGGER.debug("Got username, will grab password and enable authentication", self.username)
+            _LOGGER.debug("Got username, will grab password and enable authentication")
             self.password = password
             self.auth = "{}:{}@".format(self.username, self.password)
         else:
