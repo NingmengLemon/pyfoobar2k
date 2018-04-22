@@ -13,7 +13,7 @@ install_reqs = parse_requirements(reqs_file, session=uuid.uuid1())
 
 setup(
     name="pyfoobar2k",
-    version="0.2.2",
+    version="0.2.3",
     author="Edo Ozer",
     author_email="ed0zer@gmail.com",
     description="foobar2000, foo_httpcontrol",
