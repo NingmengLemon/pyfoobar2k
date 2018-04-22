@@ -40,12 +40,9 @@ class FoobarRemote:
         }
         try:
             res = requests.get(url=self.url, headers=headers, params=parameters, timeout=self.timeout).json()
-        except requests.ConnectTimeout as t:
-            _LOGGER.error("Fetching player state failed on Timeout Exception: %s", t)
-            res = 'ConnectTimeout'
         except Exception as e:
             _LOGGER.error("Fetching player state failed with an Exception: %s", e)
-            res = 'UnknownError'
+            res = 'fetchStateFailed'
         return res
 
     def cmd(self, command, parameter=None):
