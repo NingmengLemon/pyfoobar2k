@@ -5,11 +5,11 @@ Currently only some of foo_httpcontrol functions are implemented:
 * Fetching track info and  album art from player
 * Fetching playlists
 
-foobar2000 Requirements:
+foobar2000 Setup and Requirements:
 
-* foobar2000 version >= 1.1
-* foo_httpcontrol plugin (tested on version 0.97.17)
-* foo_httpcontrol template from this project
+* foobar2000 version >= 1.1  
+* Install foo_httpcontrol [plugin](https://bitbucket.org/oblikoamorale/foo_httpcontrol/downloads/) (by oblikoamorale) (tested on version 0.97.17)  
+* Import foo_httpcontrol template from this project  
 
 Template Installation:
 
