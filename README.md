@@ -13,7 +13,7 @@ foobar2000 Setup and Requirements:
 
 Template Installation:
 
-Copy `template/` directory from this project into `foo_httpcontrol_data/` directory of foobar2000 and name it `pyfoobar2k`    
+Copy `template/` directory content from this project into `foo_httpcontrol_data/` directory of foobar2000.      
 foobar2000 standard installation: usually goes into `%APPDATA%\foobar2000\foo_httpcontrol_data\pyfoobar2k`    
 foobar2000 portable installation: usually goes into `<foobar2000_root_dir>\foo_httpcontrol_data\pyfoobar2k`    
 A successful installation of the template can be verified at `http://<player_ip_address>:8888/pyfoobar2k`    
