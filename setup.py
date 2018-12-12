@@ -25,7 +25,7 @@ setup(
     keywords="pyfoobar2k, foo_httpcontrol, foobar2000",
     install_requires=["requests"],
     packages=['pyfoobar2k'],
-    url="https://bitbucket.org/ed0zer/pyfoobar2k",
+    url="https://gitlab.com/ed0zer-projects/pyfoobar2k",
     long_description=read('README.md'),
     long_description_content_type='text/markdown',
     classifiers=[
