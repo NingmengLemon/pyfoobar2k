@@ -8,5 +8,6 @@
 "isPaused":"[IS_PAUSED]",
 "itemPlayingPos":"[ITEM_PLAYING_POS]",
 "itemPlayingLen":"[ITEM_PLAYING_LEN]",
-"albumArt":"[ALBUMART]"
+"albumArt":"[ALBUMART]",
+"playbackorder":"[PLAYBACK_ORDER]"
 }
