@@ -17,7 +17,7 @@ install_reqs = parse_requirements(reqs_file, session=uuid.uuid1())
 
 setup(
     name="pyfoobar2k",
-    version="0.2.6",
+    version="0.2.7",
     author="Edo Ozer",
     author_email="ed0zer@gmail.com",
     description="control foobar2000 via foo_httpcontrol",
@@ -30,5 +30,5 @@ setup(
     long_description_content_type='text/markdown',
     classifiers=[
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3.6'
+        'Programming Language :: Python :: 3.7'
     ])
