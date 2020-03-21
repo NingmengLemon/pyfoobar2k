@@ -40,9 +40,9 @@ class FoobarRemote:
         }
         try:
             res = requests.get(url=self.url, headers=headers, params=parameters, timeout=self.timeout).json()
-        except Exception as e:
-            _LOGGER.error("Fetching player state failed with an Exception: %s", e)
-            res = 'fetchStateFailed'
+        except (ConnectionError, OSError) as e:
+            _LOGGER.error("Fetching player state failed: %s", e)
+            res = None
         return res
 
     def cmd(self, command, parameter=None):
@@ -56,10 +56,10 @@ class FoobarRemote:
         try:
             res = requests.get(url=self.url, headers=headers, params=parameters,
                                timeout=self.timeout).status_code
-        except Exception as e:
-            _LOGGER.error("Sending command to player failed with an Unknown Exception: %s", e)
+        except (ConnectionError, OSError) as e:
+            _LOGGER.error("Sending command to player failed: %s", e)
         if res != 200:
-            _LOGGER.error("Sending command to player failed, response status code: %s", res)
+            _LOGGER.error("Sending command to player failed, got a bad response status code: %s", res)
         return res
 
     def url(self):
@@ -76,10 +76,7 @@ class FoobarRemote:
         }
         try:
             res = requests.get(url=self.url, headers=headers, params=parameters, timeout=self.timeout).json()
-        except requests.ConnectTimeout as t:
-            _LOGGER.error("Fetching playlist info failed on Timeout Exception: %s", t)
-            res = 'ConnectTimeout'
-        except Exception as e:
-            _LOGGER.error("Fetching playlist info failed with an Exception: %s", e)
-            res = 'UnknownError'
+        except (ConnectionError, OSError) as e:
+            _LOGGER.error("Fetching playlist info failed: %s", e)
+            res = None
         return res
