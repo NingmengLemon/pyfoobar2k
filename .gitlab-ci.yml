@@ -1,0 +1,46 @@
+---
+image: python:3.7-alpine
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay2
+  USERNAME: ${PYPI_USER}
+  PASSWORD: ${PYPI_PASS}
+
+stages:
+#  - test
+  - build
+#  - release
+  - release-pypi
+
+
+build:
+  stage: build
+  script: python setup.py sdist bdist_wheel
+  artifacts:
+    paths:
+    - dist/
+    expire_in: 1 week
+#  except:
+#    - tags
+  when: manual
+
+
+#release: semver
+
+
+release-pypi:
+  stage: release-pypi
+  before_script:
+    - pip install twine==2.0.0
+  script: >
+    twine upload
+    --repository-url "https://upload.pypi.org/legacy/"
+    -u ${USERNAME} -p ${PASSWORD}
+    dist/*.whl
+  only:
+    - master
+#  only:
+#    - tags
+  when: manual
